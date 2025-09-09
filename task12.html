@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Side by Side Inputs</title>
+</head>
+<body>
+  <form>
+    <fieldset style="border: 1px solid; width: 700px; background-color: lightblue;">
+        <h2>TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+        <h3><center>GENERAL BUS PASS APPLICATION</center></h3>
+    </fieldset>
+    <fieldset style="border: 1px solid; width: 700px; background-color: #f9f9f9;">
+      <legend><b>Applicant Details</b></legend>
+
+      <table>
+        <tr>
+          <td>
+            <label for="name">Name* </label>
+          </td>
+          <td>
+            <input type="text" id="name" name="name" required max="20">
+          </td>
+
+          <td style="width:45px;"></td> <!-- space between two fields -->
+
+          <td>
+            <label for="fname">Father's / Guardian's Name* </label>
+          </td>
+          <td>
+            <input type="text" id="fname" name="fname" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="DOB">Date of birth*</label> </label>
+          </td>
+          <td>
+            <input type="text" id="DOB" name="name" required>
+          </td>
+
+          <td style="width:45px;"></td> <!-- space between two fields -->
+
+          <td>
+            <label for="Gender">Gender* </label>
+          </td>
+          <td>
+            <input type="radio" id="Gender" name="Gender">
+            <label for = "">Female</label>
+            <input type="radio" id="Gender" name="Gender">
+            <label for = "">Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Age">Age As on:</label> 
+          </td>
+          <td>
+            <input type="date" id="Age" name="">
+          </td>
+
+          <td style="width:45px;"></td> <!-- space between two fields -->
+
+          <td>
+            <label for="Aadhar">Aadhaar No </label>
+          </td>
+          <td>
+            <input type="number" id="Aadhar" name="" minlength="12" maxlength="12">
+          </td>
+        </tr>
+         <tr>
+          <td>
+            <label for="Whatsapno">WhatsApp No*</label> 
+          </td>
+          <td>
+            <input type="number" id="Whatsapno" name="" minlength="10" maxlength="10" required>
+          </td>
+
+          <td style="width:45px;"></td> <!-- space between two fields -->
+
+          <td>
+            <label for="Email">E-mail Id* </label>
+          </td>
+          <td>
+            <input type="email" id="Email" name="" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <label for="myfile">Photo*</label>
+          </td>
+          <td>
+            <input type="file" id="myfile" name="Choose File" required>
+          </td>
+        </tr>
+      </table>
+      <br>
+    </fieldset>
+    <fieldset style ="border: 1px solid; width:700px ; background-color: #f9f9f9;">
+       <legend align = "left"><b>Residential Address Details</b></bResidential></legend>
+       <table>
+        <tr>
+          <td>
+            <label for="">Applicant Address*</label>
+          </td>
+          <td>
+            <textarea required> </textarea>
+          </td>
+          
+          <td style="width: 90px;"></td>
+          <td>
+            <label for="">District*</label>
+          </td>
+          <td>
+            <select name = "District" required style="width:250px; height: 30px;">
+              <option>Select your district</option>
+              <option>Hyderabad</option>
+              <option>Sangareddy</option>
+              <option>Medak</option>
+              <option>kamareddy</option>
+              <option>mehababunagar</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          
+          <td>
+            <label for="">Mandal*</label>
+          </td>
+          <td>
+            <select name ="Mandal" required style="width:170px; height: 30px;">
+              <option>Select your mandal</option>
+              <option>Adilabad</option>
+              <option>Sirikonda</option>
+              <option>Nirmal</option>
+              <option>Yellandu</option>
+            </select>
+          </td>
+          
+          <td style="width: 90px;"></td>
+          <td>
+            <label for="">Village*</label>
+          </td>
+          <td>
+            <select name = "Village" style="width:250px; height: 30px;" required>
+              <option>Select your village</option>
+              <option>Hanamkonda</option>
+              <option>Inavole</option>
+              <option>Golkonda</option>
+              <option>Shaikpet</option>
+              <option>Ghanpur</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Pincode*</label>
+
+          </td>
+          <td>
+            <input type="number" name= "" id= "" minlength="6" maxlength="6" required>
+          </td>
+        </tr>
+       </table>
+    </fieldset>
+    <fieldset style = "width: 700px; border: 1px solid;">
+        <legend align = "left"> <b>Pass Type Details</b> </legend>
+        <table>
+          <tr>
+            <td><label for="">City*</label></td>
+            <td>
+              <select name="City" required style ="width: 250px;" required>
+                <option>Select city</option>
+                <option>Secunderabad</option>
+                <option>KPHB</option>
+                <option>Moosapet</option>
+                <option>Mehdipatnam</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td><label for="">Pass Type*</label></td>
+            <td>
+              <select name ="pass type" style ="width:250px ;" required>
+                <option>-------Select-------</option>
+                <option>Student pass</option>
+                <option>General pass</option>
+                <option>Employee pass</option>
+                <option>Others</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+    </fieldset>
+    <fieldset style ="width: 700px; border: 1px solid;">
+      <legend align ="left"><b>Mode of Payment & Pass Collection</b></legend>
+      <table>
+        <tr>
+          <td><label for="">Payment Mode*</label></td>
+          <td>
+            <select style ="width: 250px;" name = "payment mode" required>
+              <option>Select Payment Mode</option>
+              <option>UPI</option>
+              <option>Paytm</option>
+              <option>Google pay</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+           <td><label for="">Pass Delivery Mode*</label></td>
+          <td>
+            <select style ="width: 250px;" name = "delivery mode" required>
+              <option>Select Pass Delivery Mode</option>
+              <option>Post</option>
+              <option>Courier</option>
+              <option>At office</option>
+            </select>
+        </tr>
+        <tr> <td><label for="">Center at which you want to collect Pass*</label></td>
+          <td>
+            <select style ="width: 250px;" name = "payment mode" required>
+              <option>-----Select------</option>
+              <option>Hyderabad</option>
+              <option>Secunderabad</option>
+              <option>Moosapet</option>
+            </select></tr>
+      </table>
+    </fieldset><br><br><br><br><br>
+    <button type="submit" style="width: 100px;" ><center>SUBMIT</center></button>
+  </form>
+</body>
+</html>
